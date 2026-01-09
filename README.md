@@ -1,6 +1,6 @@
-This repo contains a customized [docker claude sandbox](https://docs.docker.com/ai/sandboxes/) and a handy `claude-docker` command to use it.
+This repo contains a customized [docker claude sandbox](https://docs.docker.com/ai/sandboxes/) and handy `claude-docker`/`claude-docker-rm` command to use it.
 
-Run `./install.sh` to build the docker image and add `claude-docker` to `~/.local/bin` and thus to PATH.
+Run `./install.sh` to build the docker image and add `claude-docker` and `claude-docker-rm` to `~/.local/bin` and thus to PATH.
 
 Edit setup scripts to customize the docker image. The current setup is for Clojure. Run `install.sh` again use updates.
 

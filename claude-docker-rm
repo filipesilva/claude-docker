@@ -1,0 +1,4 @@
+#!/bin/bash
+sandbox_id=$(docker sandbox ls | awk -v dir="$(pwd)" '$0 ~ dir {print $1}')
+[ -z "$sandbox_id" ] && echo "No sandbox found for $(pwd)" && exit 1
+docker sandbox rm "$sandbox_id"
