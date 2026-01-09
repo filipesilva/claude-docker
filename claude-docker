@@ -1,2 +1,2 @@
 #!/bin/bash
-docker sandbox run --template docker-claude-clojure claude "$@"
+docker sandbox run --template claude-docker claude "$@"
