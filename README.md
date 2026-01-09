@@ -5,3 +5,5 @@ Run `./install.sh` to build the docker image and add `claude-docker` to `~/.loca
 Edit setup scripts to customize the docker image. The current setup is for Clojure. Run `install.sh` again use updates.
 
 I recomment keeping each install scripts separately so it's easier to debug and reuse unchanged docker layers.
+
+As far as I can tell, credentials aren't being persisted across containters even though they should. Filed https://github.com/docker/desktop-feedback/issues/23.
